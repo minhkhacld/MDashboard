@@ -1,0 +1,294 @@
+@import 'devextreme/dist/css/dx.common.css';
+@import 'devextreme/dist/css/dx.light.css';
+
+/* Override devextreme css */
+.dx-theme-generic-typography a {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.dx-overlay-wrapper,
+.dx-widget {
+  font-family: 'Public Sans', sans-serif !important;
+  font-size: 0.875rem;
+}
+
+.dx-texteditor.dx-editor-outlined {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.dx-texteditor.dx-editor-outlined.dx-state-focused {
+  border-color: #00ab55;
+  border-width: 2px;
+}
+
+.dx-texteditor-input {
+  min-height: 45px;
+}
+
+.dx-device-mobile .dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-state-active {
+  background-color: #00ab55;
+  color: #fff;
+}
+
+td[role='columnheader'] {
+  text-align: center !important;
+}
+
+.dx-datagrid-header-panel .dx-toolbar {
+  margin-bottom: 5px !important;
+}
+
+/* body > div.dx-overlay-wrapper.dx-popup-wrapper.dx-overlay-modal.dx-overlay-shader {
+  margin-top: var(--popup-margin-top);
+} */
+
+@supports (padding: max(0px)) {
+
+  /* body,
+  header,
+  footer {
+    padding-left: min(0vmin, env(safe-area-inset-left));
+    padding-right: min(0vmin, env(safe-area-inset-right));
+  } */
+  body {
+    margin-top: constant(safe-area-inset-top);
+    margin-top: env(safe-area-inset-top);
+    margin-bottom: calc(4px + env(safe-area-inset-top));
+  }
+}
+
+/* Start of poup payment create */
+#root>div.MuiBox-root.css-fwi0lb>main>div>div>div.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler>div>div>div.dx-popup-content {
+  padding: 3px !important;
+}
+
+#root>div.MuiBox-root.css-fwi0lb>main>div>div>div.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler>div>div>div.dx-popup-content>div>div>div>div.dx-datagrid-header-panel>div>div>div.dx-toolbar-after>div>div>div>div>div.dx-texteditor-input-container>input {
+  height: 5px !important;
+}
+
+#root>div.MuiBox-root.css-fwi0lb>main>div>div>div.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler>div>div>div.dx-popup-content>div>div>div>div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-last-row-border>div>table>colgroup>col:nth-child(1) {
+  width: 40px !important;
+}
+
+#root>div.MuiBox-root.css-fwi0lb>main>div>div>div.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler>div>div>div.dx-popup-content>div>div>div>div.dx-datagrid-header-panel>div>div .dx-texteditor-input {
+  min-height: 35px !important;
+}
+
+#root>div.MuiBox-root.css-fwi0lb>main>div>div>div.MuiBox-root.css-0>div.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler>div>div>div.dx-popup-content {
+  padding: 5px !important;
+}
+
+/* .dx-popup-wrapper {
+  margin-top: var(--android-margin-top) !important;
+} */
+/* devextreme popup content */
+body>div.dx-overlay-wrapper.dx-popup-wrapper.dx-overlay-modal.dx-overlay-shader>div>div.dx-popup-content {
+  padding: 8px !important;
+}
+
+/* devextreme popup confirm acction */
+.popup_confirm_action {
+  z-index: 1000000000000000 !important;
+}
+
+/* devextreme list item swipable button action */
+.list-item-button-group-active {
+  display: block !important;
+  animation: animate-list-item-button-group-active;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animate-list-item-button-group-active {
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  to {
+    transform: translate(var(--buttonLength), 0px);
+  }
+}
+
+.list-item-button-group {
+  /* display: block !important; */
+  display: none !important;
+  animation: animate-list-item-button-group;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+@keyframes animate-list-item-button-group {
+  from {
+    transform: translate(var(--buttonLength), 0px);
+  }
+
+  to {
+    transform: translate(30px, 0px);
+  }
+}
+
+/* Overwrite List mobile */
+.dx-device-mobile .dx-list {
+  overflow: hidden !important;
+}
+
+.dx-device-mobile .dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item .dx-state-focused {
+  background-color: #eeeeee !important;
+  color: black !important;
+}
+
+.dx-list-item {
+  background-color: white !important;
+  color: black !important;
+}
+
+
+/* compliance list all section remove padding to make swip button full height */
+#simple-tabpanel-2-2>div.widget-container>div>div.dx-scrollable-wrapper>div>div.dx-scrollable-content>div.dx-scrollview-content>div>div {
+  padding: 0 !important;
+}
+
+#simple-tabpanel-2-2>div>div.widget-container>div>div.dx-scrollable-wrapper>div>div>div.dx-scrollview-content>div>div {
+  padding: 0 !important;
+}
+
+#simple-tabpanel-1-1>div>div.dx-scrollable-wrapper>div>div>div.dx-scrollview-content>div>div {
+  padding: 0 !important;
+}
+
+#product_avtivities_line_list>div.dx-scrollable-wrapper>div>div>div.dx-scrollview-content>div>div {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#compliance-card-section>div>div>div.dx-scrollable-wrapper>div>div.dx-scrollable-content>div.dx-scrollview-content>div.dx-item-content>div.dx-list-item-content {
+  padding: 0 !important;
+}
+
+#compliance-card-section>div>div.dx-scrollable-wrapper>div>div>div.dx-scrollview-content>div>div {
+  padding: 0px !important;
+}
+
+/* compliance list section remove border top */
+#compliance-card-detail>div.MuiBox-root.css-hpgf8j>div.MuiBox-root.css-0>div>div.dx-scrollable-wrapper>div>div.dx-scrollable-content>div.dx-scrollview-content>.dx-list-item {
+  border-top: none !important;
+}
+
+/* // Image editor : */
+.FIE_root *::-webkit-scrollbar,
+#SfxPopper *::-webkit-scrollbar {
+  width: 4px;
+  height: 10px !important;
+  -webkit-appearance: none !important;
+}
+
+/* .FIE_topbar-save-button {
+  display: none !important;
+} */
+/* ::-webkit-scrollbar {
+  -webkit-appearance: none !important;
+  width: 4px !important;
+} */
+.MuiTooltip-popper {
+  z-index: 100000 !important;
+}
+
+.dx-popup-wrapper>.dx-overlay-content {
+  border-radius: 15px !important;
+}
+
+/* // Popup complicance section detail */
+#section-detail-modal>div>div.dx-popup-content {
+  height: 100% !important;
+}
+
+/* Set mui action dialog */
+.MuiDialogActions-root {
+  padding: 8px !important
+}
+
+
+/* OVERIDE POPUP HEADER ---------------------------------------------------------------*/
+.dx-popup-content {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+.dx-popup-title.dx-toolbar {
+  background-color: var(--themeColorPresets);
+  color: white;
+}
+
+body>div.dx-overlay-wrapper.dx-popup-wrapper.packing-and-label.dx-overlay-modal.dx-overlay-shader>div>div.dx-toolbar.dx-widget.dx-visibility-change-handler.dx-collection.dx-popup-title.dx-has-close-button>div>div.dx-toolbar-center>div>div>div {
+  white-space: normal !important;
+  font-size: 14px !important;
+  height: fit-content !important;
+  text-align: left !important;
+}
+
+.dx-button-mode-text .dx-icon {
+  color: white;
+}
+
+#mail-group-popup .dx-texteditor-input {
+  min-height: 30px !important;
+  min-width: 40px !important;
+}
+
+#mail-group-popup>div>div.dx-datagrid-header-panel>div>div>div.dx-toolbar-after>div:nth-child(2)>div>div {
+  width: 70% !important;
+  min-width: 270px !important;
+}
+
+#mail-group-popup>div>div.dx-datagrid-header-panel>div {
+  margin-bottom: 0px !important;
+}
+
+#mail-group-popup>div>div.dx-datagrid-header-panel>div {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+
+.SnackbarContainer-root {
+  z-index: 10000000000 !important;
+}
+
+/* Change label color devextreme*/
+.dx-texteditor-label .dx-label span {
+  background-color: white !important;
+  color: var(--label);
+}
+
+
+/* Popup  */
+body>div.dx-overlay-wrapper.dx-popup-wrapper.popup-image-editor.dx-overlay-modal.dx-overlay-shader>div>div.dx-popup-content {
+  padding: 0px !important;
+}
+
+body>div.dx-overlay-wrapper.dx-popup-wrapper.popup-image-editor.dx-overlay-modal.dx-overlay-shader>div>div.dx-popup-content>div>div>div:nth-child(2) {
+  left: 0 !important;
+  right: 0 !important;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  padding: 0px !important;
+}
+
+/* OVERIDE DX LIST-----------------------------------------------------------------------------------------*/
+.dx-scrollview-content {
+  padding-bottom: 100px !important;
+}
+
+/* map */
+.react-dx-map {
+  width: 100% !important;
+  height: 100% !important;
+}

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1075384060740",
+    "project_id": "m-system-1a9f6",
+    "storage_bucket": "m-system-1a9f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075384060740:android:59865f37c7bb266a516511",
+        "android_client_info": {
+          "package_name": "com.motivesvn.reactjsebs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075384060740-uc75qj05oc3it0vjd9bh5d92taf2uenp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHD1cedc1NcHMlDVqui1wVIsQQ2qOFvT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075384060740-uc75qj05oc3it0vjd9bh5d92taf2uenp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

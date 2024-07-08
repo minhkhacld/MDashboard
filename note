@@ -1,0 +1,106 @@
+
+
+RELEASE NOTE FOR IOS
+----------------------------------------------------------------
+
+Release Date: Mar 20, 2023 at 1:19 AM
+IOS RELEASE VERSION 1.0
+RELEASE DETAILS:
+    - First published version
+
+Release Date: Mar 20, 2023 at 1:19 AM
+IOS RELEASE VERSION 1.1
+RELEASE DETAILS:
+    - Fixed access token expiration
+
+Release Date: Apr 4, 2023 at 3:38 AM
+IOS RELEASE VERSION 1.2
+RELEASE DETAILS:
+    - Fixed Keyboard hide input issues
+      - Change offline mode switch functionlity
+    
+Release Date: Apr 18, 2023 at 11:25 PM
+IOS RELEASE VERSION 1.3
+RELEASE DETAILS:
+    - Add user role claim to menu bar
+        - Fix QC inpection content not scroling
+            - Add Calendar activities modules
+            -FIxed QC inspection content not scroling
+
+
+Release Date: 09/05/2023
+IOS RELEASE VERSION 1.4
+RELEASE DETAILS:
+Ngày dự kiến đưa ứng dụng lên Store: chiều 09/05/2023.
+Chi tiết bản cập nhật gồm có:
+Thêm mới tính năng:
++ Calendar activitiy
++ Badge đếm tổng các approval, shipment, bank account pending/recall cho thanh navigation menu.
++ Revise menu Mobile App (enhancement - #90 https://github.com/MotivesSystem/reactjs_ebs/issues/90)
+Sửa lỗi tính năng:
++ Phiếu QC Inspection, click Submit thì số lượng pick sample bị nhảy sai (Bug - #91 https://github.com/MotivesSystem/reactjs_ebs/issues/91)
+        
+
+RELEASE NOTE FOR ANDROID:
+----------------------------------------------------------------
+
+Release Date: Mar 20, 2023 at 1:19 AM
+ANDROID RELEASE VERSION 1.0
+RELEASE DETAILS:
+    - First release for testing
+
+Release Date: Feb 27, 2023 9:52 AM
+ANDROID RELEASE VERSION 1.1
+RELEASE DETAILS:
+    - Fixed access token expiration
+
+Release Date: Apr 3, 2023
+7:19 PM
+ANDROID RELEASE VERSION 1.5 RELEASE DETAILS:
+    - Fixed Keyboard hide input issues
+      - Change offline mode switch functionlity
+    
+Release Date: Apr 18, 2023 4:27 PM
+ANDROID RELEASE VERSION 1.6
+RELEASE DETAILS:
+    - Add user role claim to menu bar
+        - Fix QC inpection content not scroling
+            - Add Calendar activities modules
+            -FIxed QC inspection content not scroling
+
+
+Release Date: 09/05/2023 4:27 PM
+ANDROID RELEASE VERSION 1.6
+            RELEASE DETAILS:
+Ngày dự kiến đưa ứng dụng lên Store: chiều 09/05/2023.
+Chi tiết bản cập nhật gồm có:
+Thêm mới tính năng:
++ Calendar activitiy
++ Badge đếm tổng các approval, shipment, bank account pending/recall cho thanh navigation menu.
++ Revise menu Mobile App (enhancement - #90 https://github.com/MotivesSystem/reactjs_ebs/issues/90)
+Sửa lỗi tính năng:
++ Phiếu QC Inspection, click Submit thì số lượng pick sample bị nhảy sai (Bug - #91 https://github.com/MotivesSystem/reactjs_ebs/issues/91
+
+//appcenter click
+1. npm run build
+2. sync the project to update build folder
+3. run script on terminal at root project 
+ios:
+appcenter codepush release -a MotivesVN/M-System-3 -c ios/App/App/public -t 2.9 -d Production -m --description "Change public folder to public rename old puclic folder"
+android:
+appcenter codepush release -a MotivesVN/M-System-Android -c android/app/src/main/assets/public/ --target-binary-version "3.7" -d Production -m --description "Lorem"
+
+4. Restart and open the app again
+5. Checking the update devices
+appcenter codepush deployment history Production --app MotivesVN/M-System-Android
+
+config if change the couputer need to update node module for codepush:
+https://github.com/mapiacompany/capacitor-codepush/pull/77/files#diff-6f00ee27b1215ca9a6e02213e5f498e2eda6821fe35296ed2ca8191251a00ecd
+
+specification
+ Nodejs: v16.17.0   (LTS: Gallium)
+clear development
+appcenter codepush deployment clear -a MotivesVN/M-System-Android Production
+
+
+BCP-416] Add columns to table A)

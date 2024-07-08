@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">M System</string>
+    <string name="title_activity_main">M System</string>
+    <string name="package_name">com.motivesvn.reactjsebs</string>
+    <string name="custom_url_scheme">com.motivesvn.reactjsebs</string>
+</resources>
