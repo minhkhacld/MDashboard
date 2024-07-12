@@ -101,7 +101,7 @@ export default function NavbarVertical({ isOpenSidebar, onCloseSidebar }) {
   useEffect(() => {
     const newUserClaim = navConfig[0].items.reduce((acc, a) => {
       if (a.title.toLowerCase() === "home"
-        // || a.title.toLowerCase() === "tqa"
+        || a.title.toLowerCase() === "tqa"
       ) {
         acc.push(a);
       }

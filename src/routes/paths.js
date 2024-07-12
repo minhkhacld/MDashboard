@@ -1,6 +1,6 @@
 // ----------------------------------------------------------------------
 
-import { dashboard } from "src/redux/slices/dashboard";
+// import { dashboard } from "src/redux/slices/dashboard";
 
 function path(root, sublink) {
   return `${root}${sublink}`;

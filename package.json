@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "rm -rf build/ && react-app-rewired build && npm run-script sw",
+    "build": "rimraf build/ && react-app-rewired build && npm run-script sw",
     "sw": "cat src/sw.js >> build/service-worker.js",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx ./src",
@@ -200,6 +200,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "postcss": "^8.4.14",
     "prettier": "^2.5.1",
+    "rimraf": "^6.0.1",
     "typescript": "^4.5.5"
   }
 }

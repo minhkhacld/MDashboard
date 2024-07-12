@@ -51,7 +51,7 @@ const checkDeviceId = async (deviceId) => {
 
 // ----------------------------------------------------------------------
 const initialState = {
-  isAuthenticated: false,
+  isAuthenticated: true,
   isInitialized: false,
   user: null,
   message: null,
@@ -225,7 +225,7 @@ function AuthProvider({ children }) {
           dispatch({
             type: 'INITIALIZE',
             payload: {
-              isAuthenticated: false,
+              isAuthenticated: true,
             },
           });
         }
@@ -236,7 +236,7 @@ function AuthProvider({ children }) {
         dispatch({
           type: 'INITIALIZE',
           payload: {
-            isAuthenticated: false,
+            isAuthenticated: true,
             user: null,
           },
         });
