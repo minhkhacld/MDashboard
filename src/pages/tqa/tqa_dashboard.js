@@ -582,7 +582,6 @@ const TQADasboardDesign = () => {
 
           if(response && response.data.result === "success")
           {
-            debugger
             setDataTop5DesignWorstWeek(response.data.reply || []);
           }
         } 
@@ -606,7 +605,6 @@ const TQADasboardDesign = () => {
 
           if(response && response.data.result === "success")
           {
-            debugger
             setDataTop5DesignWorstYTD(response.data.reply || []);
           }
         } 
@@ -828,7 +826,6 @@ const TQADasboardDesignTop5WorstEmployeeYTD = ({dataTop5DesignBestYTD=[]}) => {
 }
 
 const TQADasboardDesignTop5WorstEmployeeWeek = ({dataTop5DesignWorstWeek=[]}) => {
-  debugger
   return (
     <Box style={{padding:"10px"}}>
       <Typography style={{textAlign:"left"}}>By Week-30</Typography>
@@ -944,7 +941,6 @@ const TQADasboard3D = () => {
 
           if(response && response.data.result === "success")
           {
-            debugger
             setDataTop53DWorstWeek(response.data.reply || []);
           }
         } 
@@ -968,7 +964,6 @@ const TQADasboard3D = () => {
 
           if(response && response.data.result === "success")
           {
-            debugger
             setDataTop53DWorstYTD(response.data.reply || []);
           }
         } 
